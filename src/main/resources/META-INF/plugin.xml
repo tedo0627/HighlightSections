@@ -1,0 +1,38 @@
+<idea-plugin>
+    <id>jp.tedo0627.highlightsections</id>
+    <name>Highlight Sections</name>
+    <vendor url="https://github.com/tedo0627">tedo0627</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <annotator language="JAVA" implementationClass="jp.tedo0627.highlightsections.HighlightAnnotator"/>
+        <annotator language="kotlin" implementationClass="jp.tedo0627.highlightsections.HighlightAnnotator"/>
+        <annotator language="PHP" implementationClass="jp.tedo0627.highlightsections.HighlightAnnotator"/>
+    </extensions>
+
+    <description><![CDATA[
+    This plugin decorates string with Minecraft Formatting codes.<br>
+    <br>
+    Support format code:<br>
+    <ul>
+        <li>0~9
+        <li>a~g
+        <li>l~r
+    </ul>
+    <br>
+    Support language:<br>
+    <ul>
+        <li>java
+        <li>kotlin
+        <li>php
+    </ul>
+    ]]></description>
+
+    <change-notes><![CDATA[
+    <p>1.0.0</p>
+    <ul>
+        <li>Release</li>
+    </ul>
+    ]]></change-notes>
+</idea-plugin>
